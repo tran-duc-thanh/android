@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+    <TableRow>
+        <TextView
+            android:layout_margin="10dp"
+            android:text="hello word"
+            android:background="#c98282"
+            android:gravity="center"
+            android:layout_span="4"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_margin="10dp"
+            android:layout_column="1"
+            android:text="B1"/>
+        <Button
+            android:layout_margin="10dp"
+            android:text="B2"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_margin="10dp"
+            android:text="C1"/>
+        <Button
+            android:layout_margin="10dp"
+            android:layout_column="2"
+            android:text="C2"/>
+        <Button
+            android:layout_margin="10dp"
+            android:text="C3"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="50dp">
+        <TableLayout
+            android:layout_span="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:layout_span="3"
+                    android:gravity="center"
+                    android:text="Login" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Username"/>
+                <EditText
+                    android:layout_span="2"
+                    android:text="username"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Password"/>
+                <EditText
+                    android:layout_span="2"
+                    android:password="true"
+                    android:text="password"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_margin="10dp"
+                    android:text="C1"/>
+                <Button
+                    android:layout_margin="10dp"
+                    android:text="C2"/>
+                <Button
+                    android:layout_margin="10dp"
+                    android:text="C3"/>
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+</TableLayout>
