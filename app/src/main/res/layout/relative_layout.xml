@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:id="@+id/textViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_margin="5dp"
+                android:textColor="@color/darkgray"
+                android:layout_span="3"
+                android:id="@+id/editTextUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewUsername"
+                android:inputType="textPersonName"
+                android:text="username" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:layout_margin="5dp"
+                android:textColor="@color/darkgray"
+                android:layout_span="3"
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextUsername"
+                android:inputType="textPassword"
+                android:text="Password" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/darkgray"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <Button
+                android:textColor="@color/black"
+                android:backgroundTint="@color/darkgray"
+                android:text="@string/forgot_password"
+                android:textSize="12dp" />
+
+            <Button
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/darkgray"
+                android:text="@string/help"
+                android:textSize="12dp" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>
