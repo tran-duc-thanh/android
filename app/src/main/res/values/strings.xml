@@ -3,4 +3,16 @@
     <string name="login">ĐĂNG NHẬP</string>
     <string name="forgot_password">QUÊN MK</string>
     <string name="help">TRỢ GIÚP</string>
+    <string-array name="country">
+        <item>Việt Nam</item>
+        <item>Lào</item>
+        <item>Hàn Quốc</item>
+        <item>Nhật Bản</item>
+    </string-array>
+
+    <string-array name="university">
+        <item>PTIT</item>
+        <item>NEU</item>
+        <item>FPT</item>
+    </string-array>
 </resources>
