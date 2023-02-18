@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:backgroundTint="@color/silver"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/silver">
 
     <TextView
         android:id="@+id/title"
@@ -33,11 +34,11 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Email"
-        android:textColorHint="@color/darkgray"
-        android:textColor="@color/black"
-        android:inputType="textEmailAddress"
         android:background="@drawable/custom_edit_text"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkgray"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image" />
@@ -47,14 +48,14 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:background="@drawable/custom_edit_text"
+        android:backgroundTint="@color/white"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColorHint="@color/darkgray"
         android:textColor="@color/black"
-        android:backgroundTint="@color/white"
+        android:textColorHint="@color/darkgray"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:background="@drawable/custom_edit_text"
         app:layout_constraintTop_toBottomOf="@id/gmail" />
 
     <TextView
@@ -73,10 +74,10 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/my_button"
         android:text="@string/login"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:textAllCaps="false"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password" />
@@ -98,9 +99,9 @@
         android:layout_marginTop="20dp"
         android:text="Tạo tài khoản"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/imageButtonFb"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonFb" />
 
     <ImageButton
         android:id="@+id/imageButtonCall"
@@ -108,9 +109,9 @@
         android:layout_height="70dp"
         android:background="@drawable/icon_call_button"
         app:layout_constraintBottom_toBottomOf="@id/imageButtonFb"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonFb"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonGoogle"
         app:srcCompat="@drawable/icon_call" />
 
     <ImageButton
@@ -121,17 +122,19 @@
         android:background="@drawable/icon_fb_button"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonGoogle"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonCall"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:srcCompat="@drawable/icon_fb" />
 
     <ImageButton
         android:id="@+id/imageButtonGoogle"
+        android:layout_marginHorizontal="20dp"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:background="@drawable/icon_google_button"
         app:layout_constraintBottom_toBottomOf="@id/imageButtonFb"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonCall"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageButtonFb"
         app:srcCompat="@drawable/icon_google" />
