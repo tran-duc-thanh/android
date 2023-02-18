@@ -4,7 +4,5 @@
     <gradient
         android:endColor="@color/teal"
         android:startColor="@color/aqua" />
-    <stroke
-        android:color="@color/white"
-        />
+    <stroke android:color="@color/white" />
 </shape>

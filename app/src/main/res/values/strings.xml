@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Trần Đức Thanh-B19DCCN647</string>
-    <string name="login">ĐĂNG NHẬP</string>
+    <string name="login">Đăng nhập</string>
     <string name="forgot_password">QUÊN MK</string>
     <string name="help">TRỢ GIÚP</string>
+    <string name="regiter">Tạo tài khoản</string>
     <string-array name="country">
         <item>Việt Nam</item>
         <item>Lào</item>
