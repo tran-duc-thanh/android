@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trần Đức Thanh-B19DCCN647</string>
+    <string name="app_name">58-Trần Đức Thanh-B19DCCN647</string>
     <string name="login">Đăng nhập</string>
     <string name="forgot_password">QUÊN MK</string>
     <string name="help">TRỢ GIÚP</string>
@@ -15,5 +15,12 @@
         <item>PTIT</item>
         <item>NEU</item>
         <item>FPT</item>
+    </string-array>
+
+    <string-array name="phepTinh">
+        <item>+</item>
+        <item>-</item>
+        <item>x</item>
+        <item>:</item>
     </string-array>
 </resources>
