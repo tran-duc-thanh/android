@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -14,14 +13,12 @@ import android.widget.TextView;
 import com.example.helloword.enums.EventHandlerEnum;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class EventHandler extends AppCompatActivity {
 
-    public static final String EMPTY = "";
     private CheckBox checkBoxAndroid;
     private CheckBox checkBoxIos;
     private CheckBox checkBoxWin;
@@ -46,6 +43,7 @@ public class EventHandler extends AppCompatActivity {
         setContentView(R.layout.event_handler_1);
         initView();
         btnSubmit.setOnClickListener(view -> {
+            initData();
             if (checkBoxAndroid.isChecked()) checkBoxs.add(checkBoxAndroid.getText().toString());
             if (checkBoxIos.isChecked()) checkBoxs.add(checkBoxIos.getText().toString());
             if (checkBoxWin.isChecked()) checkBoxs.add(checkBoxWin.getText().toString());
@@ -74,6 +72,9 @@ public class EventHandler extends AppCompatActivity {
         university = findViewById(R.id.spinnerSchool);
         btnSubmit = findViewById(R.id.btnSubmit);
         result = findViewById(R.id.result);
+    }
+
+    private void initData () {
         results = new HashMap<>();
         checkBoxs = new ArrayList<>();
         radios = new ArrayList<>();
@@ -81,7 +82,6 @@ public class EventHandler extends AppCompatActivity {
         countrys = new ArrayList<>();
         schools = new ArrayList<>();
     }
-
     private void addResult (List<String> rs, String name) {
         results.put(name, String.join(", ", rs));
     }
