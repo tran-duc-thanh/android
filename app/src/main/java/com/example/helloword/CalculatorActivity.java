@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.helloword.enums.Calculation;
+import com.example.helloword.enums.CalculationEnum;
 
 public class CalculatorActivity extends AppCompatActivity {
 
@@ -72,16 +72,16 @@ public class CalculatorActivity extends AppCompatActivity {
     private void setViewBtn () {
         switch (spinner.getSelectedItem().toString()) {
             case "+":
-                button.setText(Calculation.PLUS.getValue());
+                button.setText(CalculationEnum.PLUS.getValue());
                 break;
             case "-":
-                button.setText(Calculation.MINUS.getValue());
+                button.setText(CalculationEnum.MINUS.getValue());
                 break;
             case "x":
-                button.setText(Calculation.MULTIPLY.getValue());
+                button.setText(CalculationEnum.MULTIPLY.getValue());
                 break;
             case ":":
-                button.setText(Calculation.DIVISION.getValue());
+                button.setText(CalculationEnum.DIVISION.getValue());
                 break;
             default:
                 button.setText(EMPTY);

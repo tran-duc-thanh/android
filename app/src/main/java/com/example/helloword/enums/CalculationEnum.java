@@ -1,6 +1,6 @@
 package com.example.helloword.enums;
 
-public enum Calculation {
+public enum CalculationEnum {
     PLUS("cộng"),
     MINUS("trừ"),
     MULTIPLY("nhân"),
@@ -8,7 +8,7 @@ public enum Calculation {
     ;
     private String value;
 
-    Calculation(String value) {
+    CalculationEnum(String value) {
         this.value = value;
     }
 
