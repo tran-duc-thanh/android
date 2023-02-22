@@ -3,7 +3,7 @@
     <corners android:radius="250dp" />
     <gradient
         android:type="linear"
-        android:startColor="@color/green"
-        android:endColor="@color/green"
+        android:startColor="@color/olivedrab"
+        android:endColor="@color/olivedrab"
         />
 </shape>
