@@ -106,8 +106,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonCall"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/icon_call_button"
         app:layout_constraintBottom_toBottomOf="@id/imageButtonFb"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,8 +117,8 @@
 
     <ImageButton
         android:id="@+id/imageButtonFb"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/icon_fb_button"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonGoogle"
@@ -131,8 +131,8 @@
     <ImageButton
         android:id="@+id/imageButtonGoogle"
         android:layout_marginHorizontal="20dp"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/icon_google_button"
         app:layout_constraintBottom_toBottomOf="@id/imageButtonFb"
         app:layout_constraintEnd_toStartOf="@+id/imageButtonCall"
