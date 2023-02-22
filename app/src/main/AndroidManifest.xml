@@ -12,6 +12,9 @@
         android:theme="@style/Theme.HelloWord"
         tools:targetApi="31">
         <activity
+            android:name=".ListViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".EventHandler"
             android:exported="false" />
         <activity
