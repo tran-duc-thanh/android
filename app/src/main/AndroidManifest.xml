@@ -12,7 +12,7 @@
         android:theme="@style/Theme.HelloWord"
         tools:targetApi="31">
         <activity
-            android:name=".ListViewObjectActivity"
+            android:name=".ListViewActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -33,7 +33,7 @@
             android:name=".RegiterActivity"
             android:exported="false" />
         <activity
-            android:name=".ListViewActivity"
+            android:name=".ListViewObjectActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
