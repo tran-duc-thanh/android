@@ -1,9 +1,12 @@
 package com.example.helloword;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.helloword.model.System;
 import com.example.helloword.model.SystemAdapter;
@@ -22,6 +25,10 @@ public class ListViewObjectActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_object);
         init();
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+            setColorItem(i);
+            Toast.makeText(getApplicationContext(), systems.get(i).getTitle(), Toast.LENGTH_SHORT).show();
+        });
     }
 
     private void init () {
@@ -34,5 +41,17 @@ public class ListViewObjectActivity extends AppCompatActivity {
         ));
         systemAdapter = new SystemAdapter(systems);
         listView.setAdapter(systemAdapter);
+    }
+
+    private void setColorItem (int postion) {
+        resetBackgroundColor();
+        listView.getChildAt(postion).setBackgroundColor(ContextCompat.getColor(this ,R.color.gray));
+    }
+
+    private void resetBackgroundColor () {
+        int n = listView.getAdapter().getCount();
+        for (int i = 0; i < n; i++) {
+            listView.getChildAt(i).setBackgroundColor(Color.TRANSPARENT);
+        }
     }
 }
