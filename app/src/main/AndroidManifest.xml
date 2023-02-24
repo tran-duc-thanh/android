@@ -18,7 +18,7 @@
             android:name=".ListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".MenuOpsionActivity"
             android:exported="false" />
         <activity
             android:name=".EventHandler"
@@ -36,7 +36,7 @@
             android:name=".RegiterActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuOpsionActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
