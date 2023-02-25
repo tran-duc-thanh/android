@@ -24,7 +24,7 @@
             android:name=".EventHandler"
             android:exported="false" />
         <activity
-            android:name=".CalculatorActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -36,7 +36,7 @@
             android:name=".RegiterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".CalculatorActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

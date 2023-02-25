@@ -29,9 +29,7 @@ public class CalculatorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.event_handling_1);
         initView();
-        button.setOnClickListener(view -> {
-            result.setText(calculate());
-        });
+        button.setOnClickListener(view -> result.setText(calculate()));
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
@@ -52,8 +50,8 @@ public class CalculatorActivity extends AppCompatActivity {
         spinner = findViewById(R.id.spinner);
     }
     private String calculate () {
-        float numb1 = Integer.parseInt(number1.getText().toString());
-        float numb2 = Integer.parseInt(number2.getText().toString());
+        float numb1 = Float.parseFloat(number1.getText().toString());
+        float numb2 = Float.parseFloat(number2.getText().toString());
         switch (spinner.getSelectedItem().toString()) {
             case "+":
                 return String.format("%.2f", numb1 + numb2);
