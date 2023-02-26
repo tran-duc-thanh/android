@@ -2,6 +2,7 @@ package com.example.helloword;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -32,7 +33,8 @@ public class RecycleViewActivity extends AppCompatActivity implements CatItemLis
         recyclerView = findViewById(R.id.recycleView);
         adapter = new CatAdapter(getDataCat());
         adapter.setCatItemListener(this);
-        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
+//        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL, false));
         recyclerView.setAdapter(adapter);
     }
 
