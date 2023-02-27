@@ -12,6 +12,12 @@
         android:theme="@style/Theme.HelloWord"
         tools:targetApi="31">
         <activity
+            android:name=".AutoCompleteTextViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecycleViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".CalculatorActivity"
             android:exported="false" />
         <activity
@@ -39,7 +45,7 @@
             android:name=".RegiterActivity"
             android:exported="false" />
         <activity
-            android:name=".RecycleViewActivity"
+            android:name=".CLUDCatActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
