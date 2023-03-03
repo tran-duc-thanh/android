@@ -30,7 +30,7 @@
             android:name=".MenuOpsionActivity"
             android:exported="false" />
         <activity
-            android:name=".EventHandler"
+            android:name=".CLUDCatActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -45,7 +45,7 @@
             android:name=".RegiterActivity"
             android:exported="false" />
         <activity
-            android:name=".CLUDCatActivity"
+            android:name=".EventHandler"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
