@@ -39,13 +39,13 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".DateTimePickerActivity"
+            android:name=".EventHandler"
             android:exported="false" />
         <activity
             android:name=".RegiterActivity"
             android:exported="false" />
         <activity
-            android:name=".EventHandler"
+            android:name=".DateTimePickerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
